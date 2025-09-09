@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nombre_proyecto');
             $table->string('descripcion');
             $table->foreignId('cliente_id')->constrained('clientes');
-            $table->foreignId('arquitectos_id')->constrained('arquitectos');
+            $table->foreignId('arquitecto_id')->constrained('arquitectos');
             $table->foreignId('zonas_id')->constrained('zonas');
             $table->timestamps();
         });

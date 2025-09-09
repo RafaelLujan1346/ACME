@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('arquitecto_id')->constrained('users');
             $table->string('direccion');
-            $table->string('RFC');
+            $table->string('cedula');
+            $table->string('especialidad');
             $table->timestamps();
         });
     }
